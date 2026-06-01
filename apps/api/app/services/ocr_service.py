@@ -1,11 +1,11 @@
-from paddleocr import PaddleOCR
+import easyocr
 
 
 class OCRService:
 
-    _ocr = PaddleOCR(
-        use_angle_cls=True,
-        lang="en"
+    _reader = easyocr.Reader(
+        ["en"],
+        gpu=True
     )
 
     @classmethod
@@ -14,22 +14,9 @@ class OCRService:
         image_path: str
     ) -> str:
 
-        result = cls._ocr.ocr(
+        result = cls._reader.readtext(
             image_path,
-            cls=True
+            detail=0
         )
 
-        extracted = []
-
-        for block in result:
-            if not block:
-                continue
-
-            for line in block:
-                extracted.append(
-                    line[1][0]
-                )
-
-        return "\n".join(
-            extracted
-        )
+        return "\n".join(result)
