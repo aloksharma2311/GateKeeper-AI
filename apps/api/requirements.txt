@@ -5,11 +5,13 @@ pydantic-settings
 python-dotenv
 
 easyocr
+torch
+torchvision
+
 opencv-python
 numpy
 pillow
 
 python-whois
 requests
-
 python-multipart
