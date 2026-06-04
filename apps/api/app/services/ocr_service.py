@@ -3,10 +3,19 @@ import easyocr
 
 class OCRService:
 
-    _reader = easyocr.Reader(
-        ["en"],
-        gpu=True
-    )
+    _reader = None
+
+    @classmethod
+    def get_reader(cls):
+
+        if cls._reader is None:
+
+            cls._reader = easyocr.Reader(
+                ["en"],
+                gpu=False
+            )
+
+        return cls._reader
 
     @classmethod
     def extract_text(
@@ -14,7 +23,9 @@ class OCRService:
         image_path: str
     ) -> str:
 
-        result = cls._reader.readtext(
+        reader = cls.get_reader()
+
+        result = reader.readtext(
             image_path,
             detail=0
         )
