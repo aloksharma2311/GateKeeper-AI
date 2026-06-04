@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { ScansService } from "@/features/scans/services/scans.service.ts";
+import { ScansService } from "@/features/scans/services/scans.service";
 import { uploadScreenshot } from "@/features/scans/actions/upload-scan.action";
 
 export default async function ScansPage() {
