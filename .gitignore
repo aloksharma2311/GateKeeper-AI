@@ -1,0 +1,42 @@
+# Node
+node_modules/
+
+# Python
+.venv/
+venv/
+
+# Env
+.env
+.env.*
+
+# Next
+.next/
+out/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+htmlcov/
+
+# Downloads
+downloads/
+
+# Railway
+.railway/
+
+# Vercel
+.vercel/
