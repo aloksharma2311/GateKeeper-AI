@@ -1,5 +1,15 @@
-fastapi
+﻿fastapi
 uvicorn
 supabase
 pydantic-settings
 python-dotenv
+
+easyocr
+opencv-python
+numpy
+pillow
+
+python-whois
+requests
+
+python-multipart
