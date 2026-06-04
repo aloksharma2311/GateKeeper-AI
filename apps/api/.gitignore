@@ -1,4 +1,51 @@
-.venv
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtual env
+.venv/
+venv/
+env/
+
+# environment variables
 .env
-__pycache__
-*.pyc
+
+# logs
+*.log
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# coverage
+.coverage
+htmlcov/
+
+# build
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# local downloads
+downloads/
+
+# OCR temp files
+temp/
+tmp/
+
+# SQLite
+*.db
+
+# Railway
+.railway/
