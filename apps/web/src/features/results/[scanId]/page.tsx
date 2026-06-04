@@ -12,7 +12,7 @@ export default async function ResultsPage({
     await params;
 
   const result =
-    await ResultsService.getScanResult(
+    await ResultsService.getResult(
       scanId
     );
 
