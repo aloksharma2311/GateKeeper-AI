@@ -8,7 +8,7 @@ easyocr
 torch
 torchvision
 
-opencv-python
+opencv-python-headless
 numpy
 pillow
 
